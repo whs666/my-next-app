@@ -28,7 +28,7 @@ const sendNotification = async () => {
 };
 
 // 设置定时任务
-cron.schedule('0,15,30,45 23,0-3 * * *', () => {
+cron.schedule('10-59/1 11 * * *', () => {
   sendNotification();
 }, {
   timezone: 'Asia/Shanghai'
